@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract Shabi is ERC20 {
   constructor()
   ERC20("ShabiToken", "SB") {
-    _mint(msg.sender, 21000000);
+    _mint(msg.sender, 21000000 * 10 ^ decimals());
   }
 
   // 事件声明
